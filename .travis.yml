@@ -12,7 +12,7 @@ addons:
     packages:
       - g++-4.8
   code_climate:
-      repo_token: 7e9342659cccc97e7107c9d07df0026e9e4e8382a55ade170045ca6fe22a1c3b
+      repo_token: 2ed3a18cb0f0c29939bca0a0e3bedcea3ba834093ad9f1442f39b9edf7c02b3c
 before_script:
   - npm i -g mocha
   - npm i -g codeclimate-test-reporter
