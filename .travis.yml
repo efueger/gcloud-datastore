@@ -11,11 +11,9 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - g++-4.8
-  code_climate:
-      repo_token: 2ed3a18cb0f0c29939bca0a0e3bedcea3ba834093ad9f1442f39b9edf7c02b3c
 before_script:
   - npm i -g mocha
-  - npm i -g codeclimate-test-reporter
+  - npm install -g codeclimate-test-reporter
   - npm i -g istanbul
 after_script:
   - CODECLIMATE_REPO_TOKEN=2ed3a18cb0f0c29939bca0a0e3bedcea3ba834093ad9f1442f39b9edf7c02b3c codeclimate-test-reporter < lcov.info
